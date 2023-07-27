@@ -1,0 +1,214 @@
+.page_vist{
+    position: relative;
+    background-color: var(--corFundo);
+    height: 80%;
+    width: 80%;
+    top: -30px;
+    border-radius: 30px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 0;
+}
+
+div.input-code{
+    width: 100%;
+    margin: 30px 0;
+    position: relative;
+}
+
+div.input-code label{
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    color: var(--corTexto);
+    cursor: text;
+    transition: .5s ease-in-out;
+}
+
+form{
+    width: 100%;
+    max-width: 350px;
+}
+
+.input{
+    width: 100%;
+    padding: 5px;
+    color: var(--corTexto);
+    border: 0;
+    border-bottom: 2px solid var(--corHover);
+    outline: 0;
+    font-size: 14px;
+}
+
+.input:valid{
+    border-bottom: 2px solid cornflowerblue;
+}
+
+.input:focus ~ label, .input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: cornflowerblue;
+}
+
+#inputs-casa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#imovel{
+    width: 100%;
+}
+
+#vistoriador{
+    width: 100%;
+}
+
+#pesquisar_vistoria{
+    width: 40%;
+}
+
+.all_tables{
+    border-collapse:separate;
+    border-spacing: 0px;
+    width: 100%;
+}
+
+.all_tables th{
+    position: sticky;
+    top: 0;
+    background-color: var(--corPrincipal);
+}
+
+.ultimas_vistorias{
+    overflow-y: scroll;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+}
+
+.all_tables th, .all_tables td{
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.diminui th, .diminui td{
+    font-size: 14px;
+}
+
+.all_tables tr{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.all_tables tr:hover{
+    background-color: var(--corHover);
+}
+
+.shadowDiv{
+    border: 1px solid black;
+    box-shadow: 0px 0px 3px black;
+    padding: 20px;
+    margin: 5%;
+    border-radius: 5px;
+    max-width: 100%;
+    max-height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+#p0, #p1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+    width: 90%;
+}
+
+#numeroDiv{
+    width: 30%;
+}
+
+.dadosPesquisa{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+
+#codigoDiv{
+    width: 30%;
+}
+
+.divUsers{
+    overflow-y: scroll;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+}
+
+.shadowDiv{
+    border: 1px solid black;
+    box-shadow: 0px 0px 3px black;
+    padding: 20px;
+    margin: 5%;
+    border-radius: 5px;
+    max-width: 100%;
+    max-height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.adminButtons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.adminButtons button{
+    background-color: var(--corPrincipal);
+    width: 28%;
+    height: 75px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--corTexto);
+    transition: .3s;
+}
+
+.adminButtons button:hover{
+    transform: scale(1.05);
+}
+
+.adminButtons p{
+    background-color: var(--corPrincipal);
+    width: 28%;
+    height: 75px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sombraDiv{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}

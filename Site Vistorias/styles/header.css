@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--corFundo);
+    color: var(--corTexto);
+    line-height: 1;
+    height: 100vh;
+    transition: .2s;
+}   
+
+:root{
+    --corFundo : #f5f5f5;
+    --corHover : #cccccc;
+    --corPage : #e3e3e3;
+    --corSide : #008584;
+    --corPrincipal : #37c7c7;
+    --corTexto : black;
+    --corShadow : #ff190c;
+    --botãoBackground : #5600e8;
+    --botãoTexto : white;
+}
+
+.dark{
+    --corFundo : #121212;
+    --corTexto : white;
+    --corSide : #30009c;
+    --corHover : #292929;
+    --corPrincipal : #5600e8;
+    --corPage : #1f1f1f;
+    --botãoBackground : #37c7c7;
+    --botãoTexto : black;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 80px;
+    margin-left: 83px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 300px;
+    transition: .5s;
+}
+
+.dropdown-content{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    min-width: 100px;
+    width: 100%;
+    z-index: 1;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.dropdown-content a{
+    color: var(--corTexto);
+    font-size: large;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: var(--corFundo);
+    transition: background 0.5s;
+    border-style: none;
+    box-shadow: 0 1px 0 var(--corHover);
+}
+
+.dropdown-content a:hover{
+    background-color: var(--corHover);
+    transition: background 0.5s;
+}
+
+.dropdown:hover .dropdown-content{
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown button{
+    height: 100%;
+    width: 100%;
+    background-color: var(--corFundo);
+    transition: background 0.5s;
+    border-style: none;
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    color: var(--corTexto);
+}
+
+.dropdown button:hover{
+    background-color: var(--corHover);
+    transition: background 0.5s;
+}
+
+.dropdown button > i{
+    font-size: 25px;
+    color: var(--corTexto);
+}
+
+.outofheader{
+    display: flex;
+    flex-direction: row;
+}
